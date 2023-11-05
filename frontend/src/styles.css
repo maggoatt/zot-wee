@@ -25,12 +25,12 @@ padding: 0;
 
 #navigate-button {
     position: absolute;
-    padding: 40px;
-    font-size: 40px;
+    padding: 25px;
+    font-size: 25px;
     background-color: pink;
     margin: 10px;
     border: none;
-    bottom: 10px; /* Adjust the button's position as needed */
-    left: 10px; /* Adjust the button's position as needed */
+    bottom: 20px; /* Adjust the button's position as needed */
+    left: 20px; /* Adjust the button's position as needed */
     z-index: 2; /* Make sure the button appears over the map */
 }
