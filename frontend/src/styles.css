@@ -1,1 +1,36 @@
-#map { height: 100vh; }
+#map { 
+    height: 100vh; 
+    z-index: 1;
+}
+  
+/* 
+* Optional: Makes the sample page fill the window. 
+*/
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+:root {
+    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+    .map-tiles {
+        filter:var(--map-tiles-filter, none);
+	}
+}
+
+#navigate-button {
+    position: absolute;
+    padding: 40px;
+    font-size: 40px;
+    background-color: pink;
+    margin: 20px;
+    border: none;
+    bottom: 10px; /* Adjust the button's position as needed */
+    left: 10px; /* Adjust the button's position as needed */
+    z-index: 2; /* Make sure the button appears over the map */
+}
