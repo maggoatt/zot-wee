@@ -102,7 +102,7 @@ async function initMap() {
 
     var needtowee = {
         url: "./assets/needtowee.png",
-        scaledSize: new google.maps.Size(80, 140)
+        scaledSize: new google.maps.Size(80, 150)
     }
 
     new google.maps.Marker({
